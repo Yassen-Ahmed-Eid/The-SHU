@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The SHU</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <!--Bootstrap ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!--vendor css ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!--Link Swiper's CSS ================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Style Sheet ================================================== -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="preloader">
+      <div class="loader">
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__bar"></div>
+    <div class="loader__ball"></div>
+  </div>
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/custom.css">
+  </div><!-- end loader -->
+
+
+    <nav id="primary-header" class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+        </a>
+        <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+          <svg class="navbar-icon" width="70" height="70">
+            <use xlink:href="#navbar-icon"></use>
+          </svg>
+        </button>
+        <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 pb-0">
+            <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body align-items-center justify-content-end">
+            <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link active p-0" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link p-0" href="index.html">About</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link p-0" href="index.html">Problem</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link p-0" href="data.html">The Monitoring system</a>
+              </li>
+              <li class="nav-item ps-3 mt-4 mt-lg-0">
+                <a href="index.html" class="btn btn-outline-primary py-2 px-4">Team members</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  </section>
+  <h1 style="text-align: center;">Air Quality Metrics</h1>
+  <button id="animateButton">Show Results</button>
+  <div class="container">
+      <div class="row">
+          <canvas id="graph1"></canvas>
+          <canvas id="graph2"></canvas>
+      </div>
+      <div class="row">
+          <canvas id="graph3"></canvas>
+          <canvas id="graph4"></canvas>
+      </div>
+  </div>
+
+
+  <!-- ALL JS FILES -->
+  <script src="js/all.js"></script>
+  <!-- ALL PLUGINS -->
+  <script src="js/custom.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/hoverdir.js"></script>   
+  
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Footer Start -->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Vision and mission</h6>
+          <p class="text-justify">the SUE</i>
+            We are Egyptian students at STEM Qena School, and we are deeply concerned about the ongoing environmental and climate challenges facing the world. Among these issues, air pollution poses a significant threat, especially in urban and industrial areas. To address this, we have developed SUE, an innovative air filtration system designed to combat air pollution and improve air quality, contributing to a cleaner and healthier environment for everyone.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Problem.docx">The problem</a></li>
+            <li><a href="Project features.docx">Our services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="uploads/Privacy Policy.pdf">Privacy Policy</a></li>
+            <li><a href="uploads/Cookies.pdf">Cookies</a></li>
+
+
+
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+       <a class="footer-links" href="https://api.whatsapp.com/send/?phone=201278697377">The SUE</a>.
+          </p>
+        </div>
+        <script>
+          // Data for graphs
+          const x = [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9];
+          const CO2_NOx_before = new Array(x.length).fill(1086.11);
+          const SO2_before = new Array(x.length).fill(283.44);
+          const CO2_NOx_after = new Array(x.length).fill(575.9);
+          const SO2_after = new Array(x.length).fill(167);
+          
+          const CO2_NOx_results = [1106, 1095, 1114, 1102, 1122, 1099,  1104, 1111, 1102, 1098, 1120, 1109, 1114, 1106, 1122, 1118, 1111];
+          const SO2_results = [285, 283, 290, 287, 285, 291, 294, 288, 284, 281, 293, 296, 290, 284, 287, 282, 288];
+          const CO2_NOx_after_results = [576, 578, 570, 574, 582, 577, 571, 569, 575, 583, 580, 581, 573, 568, 565, 582, 578, 584];
+          const SO2_after_results = [163, 167, 169, 161, 165, 170, 172, 168, 164, 169, 173, 167, 164, 160, 163, 168, 170, 166];
+          
+          // Configurations for graphs
+          const createConfig = (label, data, color) => ({
+              type: 'line',
+              data: {
+                  labels: x,
+                  datasets: [{
+                      label: label,
+                      data: data,
+                      borderColor: color,
+                      borderWidth: 2,
+                      pointRadius: 0,
+                  }]
+              },
+              options: {
+                  animation: false,
+                  responsive: true,
+                  scales: {
+                      x: { title: { display: true, text: 'Time (hours)' } },
+                      y: { title: { display: true, text: 'Concentration' } }
+                  }
+              }
+          });
+          
+          // Initialize charts
+          const graph1 = new Chart(document.getElementById('graph1'), createConfig('CO2 & NOx Before', CO2_NOx_before, 'blue'));
+          const graph2 = new Chart(document.getElementById('graph2'), createConfig('SO2 Before', SO2_before, 'orange'));
+          const graph3 = new Chart(document.getElementById('graph3'), createConfig('CO2 & NOx After', CO2_NOx_after, 'green'));
+          const graph4 = new Chart(document.getElementById('graph4'), createConfig('SO2 After', SO2_after, 'red'));
+          
+          // Animation on button click
+          document.getElementById('animateButton').addEventListener('click', () => {
+              const animateChart = (chart, results) => {
+                  let index = 0;
+                  const interval = setInterval(() => {
+                      chart.data.datasets[0].data[index] = results[index];
+                      chart.update();
+                      index++;
+          
+                      if (index >= results.length) {
+                          index = 0; // Reset to the start of the data to loop
+                      }
+                  }, 500);
+              };
+          
+              animateChart(graph1, CO2_NOx_results);
+              animateChart(graph2, SO2_results);
+              animateChart(graph3, CO2_NOx_after_results);
+              animateChart(graph4, SO2_after_results);
+          });
+          </script>
+          
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/YaseeenAhmed?mibextid=ZbWKwL"><i class="fa fa-facebook fa-1x"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/yaseeen_ahmeed?igsh=ODV0MnBwZTRyc3ht"><i class="fab fa-instagram fa-1x"></i></a></li>
+                <li><a class="whatsapp" href="https://api.whatsapp.com/send/?phone=201278697377"><i class="fab fa-whatsapp fa-1x"></i></a></li>
+                <li><a class="email" href="mailto:chemocells123@gmail.com"><i class="fa fa-envelope fa-1x"></i></a></li>   
+            </ul>
+          </div>
+      </div>
+    </div>
+</footer>
+
+      <!-- ALL JS FILES -->
+      <!-- ALL PLUGINS -->  
+
+</body>
+</html>
+<style>.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+canvas {
+  margin: 10px;
+  width: 300px; /* Adjusted size for smaller graphs */
+  height: 200px; /* Adjusted size for smaller graphs */
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 20px;
+}
+
+.row {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+
+canvas {
+margin: 10px;
+width: 300px; /* Adjusted size for smaller graphs */
+height: 200px; /* Adjusted size for smaller graphs */
+}
+
+button {
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+font-size: 16px;
+}
+</style>
